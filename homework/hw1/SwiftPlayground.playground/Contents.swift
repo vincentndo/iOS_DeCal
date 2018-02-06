@@ -13,7 +13,18 @@ import XCTest
 /// - Returns: true if every word in `words` is a palindrome, false otherwise
 func arePalindromes(_ words: [String]) -> Bool {
     // your code here
-    return false
+    var half: Int
+    var arr: [Character]
+    for w in words {
+        arr = Array(w)
+        half = arr.count / 2
+        for i in 0..<half {
+            if arr[i] != arr[arr.count - i - 1] {
+                return false
+            }
+        }
+    }
+    return true
 }
 //: ## Question 2: Optionals
 //: Someone stole a cookie from the GBC! At the crime scene, they found a blue book in the cookie jar with the SID `25346602` on it, no doubt it belonged to the criminal. The manager needs your help finding who it belongs to. Complete this function using the provided dictionary of SIDS called `studentIDNumbers` to find the culprit.
@@ -30,6 +41,9 @@ func findStudent(withStudentID sid: Int?, studentIDNumbers: [Int: String] = getS
     // Note: studentIDNumbers[KEY] always returns an optional since there may not be an entry for that KEY.
     
     // your code here
+    if sid != nil && sid! < 100000000 && sid! > 9999999 && studentIDNumbers[sid!] != nil {
+        return "\(studentIDNumbers[sid!]!) stole the cookie!"
+    }
     return nil
 }
 
@@ -39,7 +53,7 @@ findStudent(withStudentID: nil) // nil
 findStudent(withStudentID: 40979255) // nil
 //: ## Question 3: Protocols
 //: Make the class `Building` conform to the `Equatable` Protocol, and implement `getCapacity()`.
-class Building {
+class Building : Equatable {
     
     var name: String
     var capacity: Int?
@@ -49,9 +63,17 @@ class Building {
         self.capacity = capacity
     }
     
+    static func == (lhs: Building, rhs: Building) -> Bool {
+        return lhs.name == rhs.name
+    }
+    
     //: Returns the `capacity` of the building. If the `capacity` is `nil`, then return `0`.
     func getCapacity() -> Int {
-        return -1 // your code here
+        // your code here
+        if self.capacity == nil {
+            return 0
+        }
+        return self.capacity!
     }
 }
 
@@ -71,6 +93,7 @@ func percentageString(forNumber x: Double) -> String {
 
 var percentageStringClosure = {
     // your code here
+    (x: Double) -> String in return String(x*10) + "%"
 }
 //: Tests below (Ignore)
 class PlaygroundTests: XCTestCase {
@@ -104,5 +127,5 @@ class PlaygroundTests: XCTestCase {
     
 }
 //: ## Uncomment this line to run tests
-//PlaygroundTests.defaultTestSuite.run()
+PlaygroundTests.defaultTestSuite.run()
 
