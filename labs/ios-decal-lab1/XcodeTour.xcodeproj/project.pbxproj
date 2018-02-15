@@ -13,6 +13,8 @@
 		14FA09DD1F69C54F0072CD85 /* CalCentralServer.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 14FA09DB1F69C5050072CD85 /* CalCentralServer.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		14FC20A51F69911000B6CCAC /* ClassListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14FC20A41F69911000B6CCAC /* ClassListViewController.swift */; };
 		14FC20A71F69968300B6CCAC /* ClassDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14FC20A61F69968300B6CCAC /* ClassDetailViewController.swift */; };
+		153D3BBC202BFE8000C2261E /* MyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153D3BBB202BFE8000C2261E /* MyViewController.swift */; };
+		153D3BBE202BFFF600C2261E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153D3BBD202BFFF600C2261E /* ViewController.swift */; };
 		4183F4C31E4007D300612972 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4183F4C21E4007D300612972 /* AppDelegate.swift */; };
 		4183F4C51E4007D300612972 /* DefineVariableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4183F4C41E4007D300612972 /* DefineVariableViewController.swift */; };
 		4183F4C81E4007D300612972 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4183F4C61E4007D300612972 /* Main.storyboard */; };
@@ -69,6 +71,8 @@
 		14FA09DB1F69C5050072CD85 /* CalCentralServer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CalCentralServer.framework; path = Frameworks/CalCentralServer.framework; sourceTree = "<group>"; };
 		14FC20A41F69911000B6CCAC /* ClassListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassListViewController.swift; sourceTree = "<group>"; };
 		14FC20A61F69968300B6CCAC /* ClassDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassDetailViewController.swift; sourceTree = "<group>"; };
+		153D3BBB202BFE8000C2261E /* MyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyViewController.swift; sourceTree = "<group>"; };
+		153D3BBD202BFFF600C2261E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1A48BD2142ED20CF2D36368C /* Autograder.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Autograder.xcconfig; sourceTree = "<group>"; };
 		4183F4BF1E4007D300612972 /* XcodeTour.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XcodeTour.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4183F4C21E4007D300612972 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -137,6 +141,7 @@
 			isa = PBXGroup;
 			children = (
 				4183F4C61E4007D300612972 /* Main.storyboard */,
+				153D3BBD202BFFF600C2261E /* ViewController.swift */,
 				451949A11F69F86600D32988 /* q1 */,
 				451949A01F69F85A00D32988 /* q2 */,
 				457C37581F6A010D00D85EC8 /* q3 */,
@@ -195,6 +200,7 @@
 		457C37581F6A010D00D85EC8 /* q3 */ = {
 			isa = PBXGroup;
 			children = (
+				153D3BBB202BFE8000C2261E /* MyViewController.swift */,
 				457C37591F6A012500D85EC8 /* BoringViewController.swift */,
 			);
 			path = q3;
@@ -333,10 +339,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				153D3BBE202BFFF600C2261E /* ViewController.swift in Sources */,
 				4183F4D71E401BBC00612972 /* OptionalsViewController.swift in Sources */,
 				14FC20A51F69911000B6CCAC /* ClassListViewController.swift in Sources */,
 				14FC20A71F69968300B6CCAC /* ClassDetailViewController.swift in Sources */,
 				4183F4C51E4007D300612972 /* DefineVariableViewController.swift in Sources */,
+				153D3BBC202BFE8000C2261E /* MyViewController.swift in Sources */,
 				4183F4D51E40120C00612972 /* NiceWorkViewController.swift in Sources */,
 				457C375A1F6A012500D85EC8 /* BoringViewController.swift in Sources */,
 				4183F4C31E4007D300612972 /* AppDelegate.swift in Sources */,
