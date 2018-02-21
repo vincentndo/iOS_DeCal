@@ -1,0 +1,5 @@
+1. Run Autograder.dmg and drag "iOS DeCal Autograder" into your Mac's Applications folder (important).
+2. Open the assignment you want to grade in Xcode.
+3. Launch the "iOS DeCal Autograder" application (the one we moved in step 1), and click "Grade".
+4. Upon successfully grading, it will notify you and output a .token file in your project directory (where your .xcodeproj file is).
+5. Upload just the .token file to Gradescope.
