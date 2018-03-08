@@ -13,9 +13,13 @@ import UIKit
 class ImagePreviewViewController: UIViewController {
 
     @IBOutlet weak var imageView: UIImageView!
+    var newImage: UIImage!
     
     override func viewDidLoad() {
+        
         super.viewDidLoad()
+        imageView.image = newImage
+        
     }
 
     override func didReceiveMemoryWarning() {

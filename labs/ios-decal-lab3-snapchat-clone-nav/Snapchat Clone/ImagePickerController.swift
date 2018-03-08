@@ -12,6 +12,10 @@ import UIKit
 class ImagePickerController: UIViewController {
     
     @IBOutlet var imageCollectionView: UICollectionView!
+    var selectedImage: UIImage!
+    
+    @IBAction func unwindToMain(segue: UIStoryboardSegue) {
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,8 +35,20 @@ class ImagePickerController: UIViewController {
     /// - Parameter image: UIImage displayed in the selected cell
     func selectImage(_ image: UIImage) {
         // TODO: take this image and display it in a new view controller
+        self.selectedImage = image
+        performSegue(withIdentifier: "mainToImageView", sender: image)
     }
-    
+
     /// TODO: override prepareForSegue to pass the selected image over to the next view
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let identifier = segue.identifier {
+            if identifier == "mainToImageView" {
+                if let dest = segue.destination as? ImagePreviewViewController {
+                    dest.newImage = selectedImage
+                }
+            }
+        }
+    }
 
 }
