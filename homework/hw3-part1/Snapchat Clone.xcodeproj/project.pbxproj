@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		15511CB12058567B00F44F84 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15511CB02058567B00F44F84 /* FeedViewController.swift */; };
+		15511CB320585B7000F44F84 /* ImageSectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15511CB220585B7000F44F84 /* ImageSectionViewController.swift */; };
+		15511CB72058784600F44F84 /* SectionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15511CB62058784600F44F84 /* SectionTableViewCell.swift */; };
+		15511CB92058C4E500F44F84 /* FeedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15511CB82058C4E500F44F84 /* FeedTableViewCell.swift */; };
+		15511CBB2059110E00F44F84 /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15511CBA2059110E00F44F84 /* ImageViewController.swift */; };
 		417986C31E6631020050E1DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 417986C21E6631020050E1DF /* Assets.xcassets */; };
 		417986C51E6632C40050E1DF /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417986C41E6632C40050E1DF /* TabBarController.swift */; };
 		417986C91E664AE40050E1DF /* ImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417986C81E664AE40050E1DF /* ImageCollectionViewCell.swift */; };
@@ -20,6 +25,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		15511CB02058567B00F44F84 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		15511CB220585B7000F44F84 /* ImageSectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSectionViewController.swift; sourceTree = "<group>"; };
+		15511CB62058784600F44F84 /* SectionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionTableViewCell.swift; sourceTree = "<group>"; };
+		15511CB82058C4E500F44F84 /* FeedTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedTableViewCell.swift; sourceTree = "<group>"; };
+		15511CBA2059110E00F44F84 /* ImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
 		417986C21E6631020050E1DF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		417986C41E6632C40050E1DF /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		417986C81E664AE40050E1DF /* ImageCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -66,6 +76,8 @@
 			isa = PBXGroup;
 			children = (
 				417986C81E664AE40050E1DF /* ImageCollectionViewCell.swift */,
+				15511CB62058784600F44F84 /* SectionTableViewCell.swift */,
+				15511CB82058C4E500F44F84 /* FeedTableViewCell.swift */,
 			);
 			name = Cells;
 			sourceTree = "<group>";
@@ -77,6 +89,9 @@
 				4196F2EC1E6609B0009916E4 /* PostNavigationController.swift */,
 				417986CE1E6657650050E1DF /* Cells */,
 				4196F2E21E6514EE009916E4 /* ImagePickerController.swift */,
+				15511CB02058567B00F44F84 /* FeedViewController.swift */,
+				15511CB220585B7000F44F84 /* ImageSectionViewController.swift */,
+				15511CBA2059110E00F44F84 /* ImageViewController.swift */,
 			);
 			name = "View Controller";
 			sourceTree = "<group>";
@@ -186,11 +201,16 @@
 			files = (
 				417986CB1E664CB60050E1DF /* ImageFlowLayout.swift in Sources */,
 				4196F2E31E6514EE009916E4 /* ImagePickerController.swift in Sources */,
+				15511CB320585B7000F44F84 /* ImageSectionViewController.swift in Sources */,
+				15511CB72058784600F44F84 /* SectionTableViewCell.swift in Sources */,
 				417986C51E6632C40050E1DF /* TabBarController.swift in Sources */,
 				417986C91E664AE40050E1DF /* ImageCollectionViewCell.swift in Sources */,
 				4196F2DD1E650ECA009916E4 /* ImageFeed.swift in Sources */,
 				4196F2CB1E6509E8009916E4 /* AppDelegate.swift in Sources */,
+				15511CB12058567B00F44F84 /* FeedViewController.swift in Sources */,
 				4196F2ED1E6609B0009916E4 /* PostNavigationController.swift in Sources */,
+				15511CBB2059110E00F44F84 /* ImageViewController.swift in Sources */,
+				15511CB92058C4E500F44F84 /* FeedTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

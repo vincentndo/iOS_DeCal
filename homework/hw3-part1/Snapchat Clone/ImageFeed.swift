@@ -13,8 +13,7 @@ import UIKit
 // or come up with a better way to keep track of snaps (MVC is your friend!).
 
 // This is one way you can store snaps. Can you think of a better way?
-var threads: [String: [UIImage]] = ["memes": [], "dog spots": [], "random": []]
-
+var threads: [String: [[Any?]] ] = ["memes": [], "dog spots": [], "random": []]
 
 let threadNames = ["memes", "dog spots", "random"]
 

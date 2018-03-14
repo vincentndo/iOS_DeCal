@@ -11,7 +11,10 @@ import UIKit
 // This class should remind you of lab 3. That's probably because it's exactly the same!
 class ImagePickerController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
     
+    var pickedImage: UIImage?
+    
     @IBOutlet var imageCollectionView: UICollectionView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         imageCollectionView.collectionViewLayout = ImageFlowLayout()
@@ -24,9 +27,19 @@ class ImagePickerController: UIViewController, UICollectionViewDataSource, UICol
 
     func selectImage(_ image: UIImage) {
         //The image being selected is passed in as "image".
+        self.pickedImage = image
+        performSegue(withIdentifier: "pickerToSectionView", sender: self)
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let identifier = segue.identifier, identifier == "pickerToSectionView", let dest = segue.destination as? ImageSectionViewController {
+            dest.selectedImage = self.pickedImage
+        }
+    }
     
+    @IBAction func unwindToPicker(segue: UIStoryboardSegue) {
+    
+    }
     
     //DON'T MODIFY CODE HERE AND BELOW!
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
