@@ -25,5 +25,5 @@ extension ImagePickerController: UICollectionViewDataSource, UICollectionViewDel
         let selectedCell = collectionView.cellForItem(at: indexPath) as! ImageCollectionViewCell
         selectImage(selectedCell.image.image!)
     }
-    
+
 }
