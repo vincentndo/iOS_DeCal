@@ -113,8 +113,8 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LeX-ra-7pL">
-                                                    <rect key="frame" x="90" y="0.0" width="189" height="32"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LeX-ra-7pL">
+                                                    <rect key="frame" x="90" y="12" width="189" height="20.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -128,9 +128,9 @@
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="bw1-Lv-xqf" firstAttribute="leading" secondItem="wQP-oh-NEQ" secondAttribute="trailing" constant="10" id="B3R-hC-3qx"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="bw1-Lv-xqf" secondAttribute="bottom" id="EdF-19-xBh"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="bw1-Lv-xqf" secondAttribute="bottom" constant="4" id="EdF-19-xBh"/>
+                                                <constraint firstItem="LeX-ra-7pL" firstAttribute="top" secondItem="Xyl-wn-zQy" secondAttribute="top" constant="12" id="Jrr-Cg-2M3" userLabel="Pokemon Name.top = top + 12"/>
                                                 <constraint firstItem="wQP-oh-NEQ" firstAttribute="top" secondItem="Xyl-wn-zQy" secondAttribute="top" id="Knt-lz-ge3"/>
-                                                <constraint firstItem="LeX-ra-7pL" firstAttribute="top" secondItem="Xyl-wn-zQy" secondAttribute="top" id="KuK-lu-BK6"/>
                                                 <constraint firstItem="vsf-89-2qf" firstAttribute="leading" secondItem="bw1-Lv-xqf" secondAttribute="trailing" constant="1" id="Qdj-ws-Nqn"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="vsf-89-2qf" secondAttribute="trailing" id="R9K-Gp-91J"/>
                                                 <constraint firstAttribute="bottom" secondItem="wQP-oh-NEQ" secondAttribute="bottom" id="VbU-9X-4Jc"/>
